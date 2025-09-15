@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webpages",
+  "info": {
+    "singularName": "webpage",
+    "pluralName": "webpages",
+    "displayName": "Webpage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pageName": {
+      "type": "string",
+      "required": true
+    },
+    "pageUrl": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "rows": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::webpage-rows.webpage-row",
+      "mappedBy": "webpage"
+    }
+  }
+}

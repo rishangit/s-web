@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webpage_rows",
+  "info": {
+    "singularName": "webpage-row",
+    "pluralName": "webpage-rows",
+    "displayName": "Webpage Row"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "rowName": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "webpage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::webpages.webpage",
+      "inversedBy": "rows"
+    }
+  }
+}
