@@ -4,7 +4,9 @@
   "info": {
     "singularName": "setting",
     "pluralName": "settings",
-    "displayName": "Settings"
+    "displayName": "Settings",
+    "description": "Global settings for the application",
+    "icon": "cog"
   },
   "options": {
     "draftAndPublish": true

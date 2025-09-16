@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_addons_link_buttons",
+  "info": {
+    "displayName": "Link Button"
+  },
+  "options": {},
+  "attributes": {
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "primary.schema"
+    }
+  }
+}

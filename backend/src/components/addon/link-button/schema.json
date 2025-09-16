@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_addon_link_buttons",
+  "info": {
+    "displayName": "Link Button",
+    "description": "An addon component that contains a Link Button (Primary)",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "linkButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "primary.link-button"
+    }
+  }
+}

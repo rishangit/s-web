@@ -365,7 +365,9 @@ export interface AdminUser extends Schema.CollectionType {
 export interface ApiSettingsSetting extends Schema.SingleType {
   collectionName: 'settings';
   info: {
+    description: 'Global settings for the application';
     displayName: 'Settings';
+    icon: 'cog';
     pluralName: 'settings';
     singularName: 'setting';
   };
@@ -399,7 +401,9 @@ export interface ApiSettingsSetting extends Schema.SingleType {
 export interface ApiWebpageRowsWebpageRow extends Schema.CollectionType {
   collectionName: 'webpage_rows';
   info: {
+    description: 'A row component for webpages with content and addons';
     displayName: 'Webpage Row';
+    icon: 'layout';
     pluralName: 'webpage-rows';
     singularName: 'webpage-row';
   };
@@ -407,6 +411,7 @@ export interface ApiWebpageRowsWebpageRow extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
+    addons: Attribute.DynamicZone<['addons.link-button']>;
     content: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -435,7 +440,9 @@ export interface ApiWebpageRowsWebpageRow extends Schema.CollectionType {
 export interface ApiWebpagesWebpage extends Schema.CollectionType {
   collectionName: 'webpages';
   info: {
+    description: 'A webpage with content and rows';
     displayName: 'Webpage';
+    icon: 'file';
     pluralName: 'webpages';
     singularName: 'webpage';
   };

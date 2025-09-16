@@ -4,7 +4,9 @@
   "info": {
     "singularName": "webpage-row",
     "pluralName": "webpage-rows",
-    "displayName": "Webpage Row"
+    "displayName": "Webpage Row",
+    "description": "A row component for webpages with content and addons",
+    "icon": "layout"
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::webpages.webpage",
       "inversedBy": "rows"
+    },
+    "addons": {
+      "type": "dynamiczone",
+      "components": [
+        "addons.link-button"
+      ]
     }
   }
 }
